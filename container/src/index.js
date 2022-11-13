@@ -1,1 +1,1 @@
-console.log('Container friend');
+import('./bootstrap');
