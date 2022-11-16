@@ -1,7 +1,10 @@
-import { mount } from 'products/ProductsIndex';
-import 'cart/CartShow';
+import { mount as mountProducts } from 'products/ProductsIndex';
+import { mount as mountCart } from 'cart/CartShow';
 
-const htmlElement = document.querySelector("#my-products");
-mount(htmlElement);
+const htmlElementProducts = document.querySelector("#my-products");
+mountProducts(htmlElementProducts);
+
+const htmlElementCart = document.querySelector('#my-cart');
+mountCart(htmlElementCart);
 
 console.log('Container friend');
